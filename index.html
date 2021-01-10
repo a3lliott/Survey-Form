@@ -4,7 +4,7 @@
 		<title>
 			Personal Interest Survey Form
 		</title>
-		<link rel="spreadsheet" href="index.css">
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
 		<main>
@@ -12,58 +12,62 @@
 				Personal Interest Survey Form
 			</h1>
 			<p id="description">Tell us more of what you like to do</p>
-			<form id="survey-form">
-				<div>
-					<label id="name-label" for="name">Name</label>
-					<input id="name" type="text" placeholder="Enter your name" required/>
-				</div>
-				<div>
-					<label id="email-label" for="email">Email</label>
-					<input id="email" type="email" placeholder="Enter your email" required />
-				</div>
-				<div>
-					<label id="number-label" for="number">Age</label>
-					<input id="number" type="number" min="5" max="100" placeholder="Enter your age" required />
-				</div>
-				<div>
-					<label id="dropdown-label" for="dropdown">Gender</label>
-					<select id="dropdown" required>
-						<option value="" disabled selected>Select an option</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						<option value="other">Other</option>
-					</select>
-				</div>
-				<div>
-					<label id="radio-label">Years of Experience</label>
-					<input id="radio-beginner" type="radio" name="experience" value="0-5 years">
-					<label id="radio-beginner-label" for="radio-beginner">0-5 years</label>
-					<input id="radio-adept" type="radio" name="experience" value="5-10 years">
-					<label id="radio-adept-label" for="radio-adept">6-10 years</label>
-					<input id="radio-advance" type="radio" name="experience" value="10-20 years">
-					<label id="radio-advance-label" for="radio-advance">11-20 years</label>
-					<input id="radio-master" type="radio" name="experience" value="20+ years">
-					<label id="radio-master-label" for="radio-master">20+ years</label>
-				</div>
-				<div>
-					<label id="checkbox-label">Choose Area(s) of Interest</label>
-					<input id="checkbox-agriculture" type="checkbox" name="area-of-interest" value="agriculture">
-					<label id="checkbox-agriculture-label" for="checkbox-agriculture">Agriculture</label>
-					<input id="checkbox-business" type="checkbox" name="area-of-interest" value="business">
-					<label id="checkbox-business-label" for="checkbox-business">Business</label>
-					<input id="checkbox-engineering" type="checkbox" name="area-of-interest" value="engineering">
-					<label id="checkbox-engineering-label" for="checkbox-engineering">Engineering</label>
-					<input id="checkbox-music" type="checkbox" name="area-of-interest" value="music">
-					<label id="checkbox-music-label" for="checkbox-music">Music</label>
-					<input id="checkbox-technology" type="checkbox" name="area-of-interest" value="technology">
-					<label id="checkbox-technology-label" for="checkbox-technology">Technology</label>
-				</div>
-				<div>
-					<label id="textarea-label">Any additional comments?</label>
-					<textarea id="textarea-comments"></textarea>
-				</div>
-				<button id="submit">Submit</button>
-			</form>
+			<div id="survey-container">
+				<form id="survey-form">
+					<div class="form-item-container">
+						<label id="name-label" for="name">Name</label>
+						<input id="name" type="text" placeholder="Enter your name" required/>
+					</div>
+					<div class="form-item-container">
+						<label id="email-label" for="email">Email</label>
+						<input id="email" type="email" placeholder="Enter your email" required />
+					</div>
+					<div class="form-item-container">
+						<label id="number-label" for="number">Age</label>
+						<input id="number" type="number" min="5" max="100" placeholder="Enter your age" required />
+					</div>
+					<div class="form-item-container">
+						<label id="dropdown-label" for="dropdown">Gender</label>
+						<select id="dropdown" required>
+							<option value="" disabled selected>Select an option</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form-item-container">
+						<label id="radio-label" class="form-item-label">Years of Experience</label>
+						<input id="radio-beginner" type="radio" name="experience" value="0-5 years">
+						<label id="radio-beginner-label" for="radio-beginner">0-5 years</label>
+						<input id="radio-adept" type="radio" name="experience" value="5-10 years">
+						<label id="radio-adept-label" for="radio-adept">6-10 years</label>
+						<input id="radio-advance" type="radio" name="experience" value="10-20 years">
+						<label id="radio-advance-label" for="radio-advance">11-20 years</label>
+						<input id="radio-master" type="radio" name="experience" value="20+ years">
+						<label id="radio-master-label" for="radio-master">20+ years</label>
+					</div>
+					<div class="form-item-container">
+						<label id="checkbox-label">Choose Area(s) of Interest</label>
+						<input id="checkbox-agriculture" type="checkbox" name="area-of-interest" value="agriculture">
+						<label id="checkbox-agriculture-label" for="checkbox-agriculture">Agriculture</label>
+						<input id="checkbox-business" type="checkbox" name="area-of-interest" value="business">
+						<label id="checkbox-business-label" for="checkbox-business">Business</label>
+						<input id="checkbox-engineering" type="checkbox" name="area-of-interest" value="engineering">
+						<label id="checkbox-engineering-label" for="checkbox-engineering">Engineering</label>
+						<input id="checkbox-music" type="checkbox" name="area-of-interest" value="music">
+						<label id="checkbox-music-label" for="checkbox-music">Music</label>
+						<input id="checkbox-technology" type="checkbox" name="area-of-interest" value="technology">
+						<label id="checkbox-technology-label" for="checkbox-technology">Technology</label>
+					</div>
+					<div class="form-item-container">
+						<label id="textarea-label">Any additional comments?</label>
+						<textarea id="textarea-comments"></textarea>
+					</div>
+					<div class="form-item-container">
+						<button id="submit"><b>Submit</b></button>
+					</div>
+				</form>
+			</div>
 		</main>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
