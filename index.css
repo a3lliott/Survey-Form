@@ -20,12 +20,23 @@ main {
   font-size: 25px;
 }
 
+form {
+  padding: 1rem 2rem;
+}
+
 .form-item-container {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .form-item-control {
   display: block;
   width: 100%;
   height: 2.25rem;
+  margin: 0.5rem auto;
+}
+
+.form-item-input {
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
 }
