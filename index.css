@@ -1,0 +1,28 @@
+main {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#survey-container {
+  background-color: aquamarine;
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
+}
+
+#title {
+  text-align: center;
+  font-size: 50px;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.form-item-container {
+  padding: 5px;
+}
+
+.form-item-label {
+}

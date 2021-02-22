@@ -1,9 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-
+		<title>
+			Personal Insight Survey Form
+		</title>
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
+		<main>
+			<h1 id="title">
+				Personal Insight Survey Form
+			</h1>
+			<p id="description">Tell us more about yourself</p>
+			<div id="survey-container">
+				<form id="survey-form">
+					<div class="form-item-container">
+						<label id="name-label" for="name">Name</label>
+						<input id="name" type="text" placeholder="Enter your name" required/>
+					</div>
+					<div class="form-item-container">
+						<label id="email-label" for="email">Email</label>
+						<input id="email" type="email" placeholder="Enter your email" required />
+					</div>
+					<div class="form-item-container">
+						<label id="number-label" for="number">Age</label>
+						<input id="number" type="number" min="5" max="100" placeholder="Enter your age" required />
+					</div>
+					<div class="form-item-container">
+						<label id="dropdown-label" for="dropdown">Gender</label>
+						<select id="dropdown" required>
+							<option value="" disabled selected>Select an option</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form-item-container">
+						<label id="radio-label" class="form-item-label">How would you describe your personality?</label>
+						<input id="radio-shy-naive" type="radio" name="personality" value="shy and naive">
+						<label id="radio-shy-naive-label" for="radio-shy-naive">Shy and naive</label>
+						<input id="radio-brave-talkative" type="radio" name="personality" value="brave and talkative">
+						<label id="radio-brave-talkative-label" for="radio-brave-talkative">Brave and talkative</label>
+						<input id="radio-easy-going-cheerful" type="radio" name="personality" value="easy-going and cheerful">
+						<label id="radio-easy-going-cheerful-label" for="radio-easy-going-cheerful">Easy-going and cheerful</label>
+						<input id="radio-honest-reliable" type="radio" name="personality" value="honest and reliable">
+						<label id="radio-honest-reliable-label" for="radio-honest-reliable">Honest and reliable</label>
+						<input id="radio-sympathetic-tolerant" type="radio" name="personality" value="sympathetic and tolerant">
+						<label id="radio-sympathetic-tolerant-label" for="radio-sympathetic-tolerant">Sympathetic and tolerant</label>
+						<input id="radio-energetic-open-minded" type="radio" name="personality" value="energetic and open minded">
+						<label id="radio-energetic-open-minded-label" for="radio-energetic-open-minded">Energetic and open minded</label>
+						<input id="radio-other" type="radio" name="personality" value="other">
+						<label id="radio-other-label" for="radio-other">Other</label>
+					</div>
+					<div class="form-item-container">
+						<label id="checkbox-label">What traits do you look for in a partner?</label>
+						<input id="checkbox-kind" type="checkbox" name="partner-traits" value="kind">
+						<label id="checkbox-kind-label" for="checkbox-kind">Kind</label>
+						<input id="checkbox-energetic" type="checkbox" name="partner-traits" value="energetic">
+						<label id="checkbox-energetic-label" for="checkbox-energetic">Energetic</label>
+						<input id="checkbox-honest" type="checkbox" name="partner-traits" value="honest">
+						<label id="checkbox-honest-label" for="checkbox-honest">Honest</label>
+						<input id="checkbox-naive" type="checkbox" name="partner-traits" value="naive">
+						<label id="checkbox-naive-label" for="checkbox-naive">Naive</label>
+						<input id="checkbox-talkative" type="checkbox" name="partner-traits" value="talkative">
+						<label id="checkbox-talkative-label" for="checkbox-talkative">Talkative</label>
+						<input id="checkbox-moody" type="checkbox" name="partner-traits" value="moody">
+						<label id="checkbox-moody-label" for="checkbox-moody">Moody</label>
+						<input id="checkbox-open-minded" type="checkbox" name="partner-traits" value="open-minded">
+						<label id="checkbox-open-minded-label" for="checkbox-open-minded">Open minded</label>
+						<input id="checkbox-respectful" type="checkbox" name="partner-traits" value="respectful">
+						<label id="checkbox-respectful-label" for="checkbox-respectful">Respectful</label>
+						<input id="checkbox-passionate" type="checkbox" name="partner-traits" value="passionate">
+						<label id="checkbox-passionate-label" for="checkbox-passionate">Passionate</label>
+						<input id="checkbox-good-looks" type="checkbox" name="partner-traits" value="good-looks">
+						<label id="checkbox-good-looks-label" for="checkbox-good-looks">Good looks</label>
+						<input id="checkbox-other" type="checkbox" name="partner-traits" value="other">
+						<label id="checkbox-other-label" for="checkbox-other">Other</label>
+					</div>
+					<div class="form-item-container">
+						<label id="textarea-label">How would you describe an ideal day?</label>
+						<textarea id="textarea-comments"></textarea>
+					</div>
+					<div class="form-item-container">
+						<button id="submit"><b>Submit</b></button>
+					</div>
+				</form>
+			</div>
+		</main>
 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
