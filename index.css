@@ -3,10 +3,11 @@ main {
 }
 
 #survey-container {
-  background-color: aquamarine;
+  background-color: rgba(128, 255, 212, 0.75);
   max-width: 1000px;
   margin: auto;
   height: 100%;
+  border-radius: 0.25rem;
 }
 
 #title {
@@ -22,10 +23,16 @@ main {
 
 form {
   padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-item-container {
   padding: 0.5rem;
+}
+
+.form-item-label {
+  font-weight: bold;
+  font-size: larger;
 }
 
 .form-item-control {
@@ -36,7 +43,37 @@ form {
 }
 
 .form-item-input {
+  padding-left: 0.5rem;
   border-color: black;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-item-dropdown {
+  padding: 0.25rem;
+  margin: 0.5rem auto;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-item-radio {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.25rem;
+}
+
+.form-item-checkbox-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.form-item-checkbox {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.25rem;
 }
