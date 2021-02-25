@@ -1,12 +1,21 @@
 main {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: beige;
+}
+
+body {
+  background: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #survey-container {
-  background-color: aquamarine;
+  background-color: rgba(71, 138, 117, 0.75);
   max-width: 1000px;
   margin: auto;
   height: 100%;
+  border-radius: 0.25rem;
 }
 
 #title {
@@ -20,9 +29,74 @@ main {
   font-size: 25px;
 }
 
-.form-item-container {
-  padding: 5px;
+form {
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.form-item-label {
+.form-group {
+  padding: 0.5rem;
+  margin: 0.75rem auto;
+}
+
+.form-group-label {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.form-group-action {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-item-control {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+}
+
+.form-input {
+  padding-left: 0.5rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+}
+
+.form-dropdown {
+  padding: 0.25rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+}
+
+.form-radio {
+  font-size: medium;
+  padding: 0.25rem;
+}
+
+.form-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.form-checkbox {
+  font-size: medium;
+  padding: 0.25rem;
+}
+
+.form-textarea {
+  padding-left: 0.5rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+}
+
+.form-button {
+  padding-left: 0.5rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
 }
