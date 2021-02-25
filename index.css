@@ -1,9 +1,17 @@
 main {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: beige;
+}
+
+body {
+  background: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #survey-container {
-  background-color: rgba(128, 255, 212, 0.75);
+  background-color: rgba(71, 138, 117, 0.75);
   max-width: 1000px;
   margin: auto;
   height: 100%;
