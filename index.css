@@ -26,54 +26,69 @@ form {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.form-item-container {
+.form-group {
   padding: 0.5rem;
+  margin: 0.75rem auto;
 }
 
-.form-item-label {
+.form-group-label {
   font-weight: bold;
   font-size: larger;
+}
+
+.form-group-action {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-item-control {
   display: block;
   width: 100%;
   height: 2.25rem;
-  margin: 0.5rem auto;
 }
 
-.form-item-input {
+.form-input {
   padding-left: 0.5rem;
   border-color: black;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem 0 grey;
   font-size: large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.form-item-dropdown {
+.form-dropdown {
   padding: 0.25rem;
-  margin: 0.5rem auto;
   border-color: black;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem 0 grey;
   font-size: large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.form-item-radio {
+.form-radio {
   font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0.25rem;
 }
 
-.form-item-checkbox-grid {
+.form-checkbox-grid {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 20%);
 }
 
-.form-item-checkbox {
+.form-checkbox {
   font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0.25rem;
+}
+
+.form-textarea {
+  padding-left: 0.5rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
+}
+
+.form-button {
+  padding-left: 0.5rem;
+  border-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem 0 grey;
+  font-size: large;
 }
